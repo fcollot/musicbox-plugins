@@ -9,7 +9,7 @@ setup(name='mbox_vtk_viewer',
       version='0.0',
       packages=['mbox_vtk_viewer'],
       entry_points = {
-          'musicbox.': [
+          'musicbox.viewers': [
               'vtk = mbox_vtk_viewer:Viewer'
           ]
       }
