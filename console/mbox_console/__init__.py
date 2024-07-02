@@ -5,7 +5,7 @@
 import sys, code
 from importlib import import_module
 
-from musicbox import QT_PACKAGE
+from musicbox.library import QT_PACKAGE
 
 if QT_PACKAGE == 'PySide2':
     from PySide2.QtCore import Qt
