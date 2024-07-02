@@ -3,10 +3,14 @@
 
 
 import sys, code
+from importlib import import_module
 
-from musicbox.pyside.QtCore import Qt
-from musicbox.pyside.QtGui import QKeySequence
-from musicbox.pyside.QtWidgets import QApplication, QLabel, QLineEdit, QScrollArea, QVBoxLayout, QWidget
+from musicbox import QT_PACKAGE
+
+if QT_PACKAGE == 'PySide2':
+    from PySide2.QtCore import Qt
+    from PySide2.QtGui import QKeySequence
+    from PySide2.QtWidgets import QApplication, QLabel, QLineEdit, QScrollArea, QVBoxLayout, QWidget
 
 
 class CommandLine(QLineEdit):
